@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:id="@+id/llSalBruto"
+    style="@style/estilo_base"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/view_salBruto"
+        style="@style/estilo_textview"
+
+        android:text="@string/salarioBruto"
+        />
+    <EditText
+        style="@style/estilo_edit"
+        android:id="@+id/edit_salBruto"
+        android:inputType="numberDecimal"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_nDepen"
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/view_ndepen"
+            style="@style/estilo_textview"
+            android:text="@string/numDependentes"
+            />
+        <EditText
+            style="@style/estilo_edit"
+            android:id="@+id/edit_ndepen"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llPlSaude"
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/view_PlanoSaude"
+            style="@style/estilo_textview"
+            android:text="@string/planoSaude"
+            />
+
+        <Spinner
+            style="@style/estilo_edit"
+            android:id="@+id/sp_PlanoSaude"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_beneficios"
+        style="@style/centro"
+        android:text="@string/beneficios"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_valA"
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/view_valeA"
+            style="@style/estilo_textview"
+            android:text="@string/tAlim"
+            />
+        <EditText
+            style="@style/estilo_edit"
+            android:id="@+id/edit_valeA"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_valeR"
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/view_valeR"
+            style="@style/estilo_textview"
+            android:text="@string/tRefei"
+            />
+        <EditText
+            style="@style/estilo_edit"
+            android:id="@+id/edit_valeR"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_valeT"
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/view_valeT"
+            style="@style/estilo_textview"
+            android:text="@string/tTrans"
+            />
+        <EditText
+            style="@style/estilo_edit"
+            android:id="@+id/edit_valeT"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

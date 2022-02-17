@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Strings entradas -->
+    <string name="app_name">APP Folha de Pagamento</string>
+    <string name="salarioBruto">Salário Bruto</string>
+    <string name="numDependentes">N° Dependentes</string>
+    <string name="planoSaude">Plano de Saúde</string>
+    <string name="beneficios">Beneficios</string>
+    <string name="tAlim">Vale alimentação</string>
+    <string name="tTrans">Vale Transporte</string>
+    <string name="tRefei">Vale Refeição</string>
+    <string name="calcular">APP Folha de Pagamento</string>
+
+
+<!--    array opcões planos de saude-->
+    <string-array name="planos">
+        <item>Nenhum</item>
+        <item>Standard</item>
+        <item>Básico</item>
+        <item>Super</item>
+        <item>Master</item>
+    </string-array>
+
+
+
+    <!-- Strings saidas -->
+
+    <string name="salarioLiquido">Salário Líquido</string>
+    <string name="vPlano">Valor do plano</string>
+    <string name="vAlim">Valor Va</string>
+    <string name="vTrans">Valor VT</string>
+    <string name="vRefei">Valor VR</string>
+    <string name="descINSS">Desconto INSS</string>
+    <string name="descIRRF">Desconto IRRF</string>
+    <string name="porceDesc">% de desconto</string>
+
+
+
+
+</resources>
