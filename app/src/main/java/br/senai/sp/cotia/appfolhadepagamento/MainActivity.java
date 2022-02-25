@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,19 +13,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        Spinner spinnerPS = (Spinner) findViewById(R.id.sp_PlanoSaude);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.planos, android.R.layout.simple_dropdown_item_1line);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerPS.setAdapter(adapter);
+       
     }
-    private Spinner spinnerPlano;
-
-    //public void onCreate{
-//
-//        spinnerPlano  = (Spinner) rootView.findViewById(R.id.sp_PlanoSaude);
-//        String[] lsPeso = getResources().getStringArray(R.array.planos);
-//
-//        spinnerPlano.setAdapter(new ArrayAdapter<String>(getContext(), R.layout.spinner_layout, lsPeso));
 
 
 
-   // }
+
+
+
+
+
+
+
 
 }
