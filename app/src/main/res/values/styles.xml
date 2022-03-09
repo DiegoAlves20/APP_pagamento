@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="titulo" parent="ftv">
+
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="color">@color/rosa</item>
+
+    </style>
     <style name="estilo_base">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-
-
-
     </style>
     <style name="ftv">
         <item name="android:layout_width">wrap_content</item>
@@ -22,10 +26,17 @@
     <style name="estilo_edit" parent="ftv">
         <item name="android:textSize">14sp</item>
         <item name="android:layout_width">match_parent</item>
-
-
     </style>
 <style name="centro" parent="estilo_textview">
 <item name="android:textAlignment">center</item>
 </style>
+    <style name="linha" parent="ftv">
+        <item name="backgroundColor">@color/white</item>
+
+    </style>
+    <style name="enviar">
+        <item name="backgroundColor">@color/white</item>
+
+
+    </style>
 </resources>

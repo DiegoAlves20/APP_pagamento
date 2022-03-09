@@ -1,12 +1,13 @@
 <resources>
-
+<!-- titulo -->
+    <string name="tittle">Folha de Pagamento</string>
     <!-- Strings entradas -->
     <string name="app_name">APP Folha de Pagamento</string>
     <string name="salarioBruto">Salário Bruto</string>
     <string name="numDependentes">N° Dependentes</string>
     <string name="planoSaude">Plano de Saúde</string>
     <string name="beneficios">Beneficios</string>
-    <string name="tAlim">Vale alimentação</string>
+    <string name="tAlim">Vale Alimentação</string>
     <string name="tTrans">Vale Transporte</string>
     <string name="tRefei">Vale Refeição</string>
     <string name="calcular">APP Folha de Pagamento</string>
@@ -14,7 +15,7 @@
 
 <!--    array opcões planos de saude-->
     <string-array name="planos">
-        <item>Nenhum</item>
+        <item >Nenhum</item>
         <item>Standard</item>
         <item>Básico</item>
         <item>Super</item>
@@ -33,8 +34,21 @@
     <string name="descINSS">Desconto INSS</string>
     <string name="descIRRF">Desconto IRRF</string>
     <string name="porceDesc">% de desconto</string>
+    <string name="totalDesc">Desconto</string>
 
 
+    <!-- Radio Gruop/Button -->
+    <string name="btnVA0">Não</string>
+    <string name="btnVA1">Sim</string>
+
+    <string name="btnVR0">Não</string>
+    <string name="btnVR1">Sim</string>
+
+    <string name="btnVT0">Não</string>
+    <string name="btnVT1">Sim</string>
+
+    <string name="Enviar">Enviar</string>
+    <string name="Refazer">Refazer</string>
 
 
 </resources>

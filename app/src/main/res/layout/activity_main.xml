@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,28 +6,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-  >
+    android:background="@color/bcoRosa">
+    <TextView
+        android:textColor="@color/rosa"
+        android:layout_width="match_parent"
+        android:id="@+id/Calc_folhaPgto"
+        style="@style/titulo"
+        android:text="@string/tittle"
+        />
+
 <LinearLayout
     android:id="@+id/llSalBruto"
     style="@style/estilo_base"
     android:orientation="horizontal">
+
     <TextView
         android:id="@+id/view_salBruto"
         style="@style/estilo_textview"
+        android:text="@string/salarioBruto" />
 
-        android:text="@string/salarioBruto"
-        />
     <EditText
         style="@style/estilo_edit"
         android:id="@+id/edit_salBruto"
         android:inputType="numberDecimal"
         />
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/ll_nDepen"
@@ -44,7 +49,6 @@
             android:id="@+id/edit_ndepen"
             android:inputType="numberDecimal"
             />
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/llPlSaude"
@@ -55,21 +59,16 @@
             style="@style/estilo_textview"
             android:text="@string/planoSaude"
             />
-
         <Spinner
             style="@style/estilo_edit"
             android:id="@+id/sp_PlanoSaude"
-
             />
-
     </LinearLayout>
-
     <TextView
         android:id="@+id/view_beneficios"
         style="@style/centro"
         android:text="@string/beneficios"
         android:layout_width="match_parent" />
-
     <LinearLayout
         android:id="@+id/ll_valA"
         style="@style/estilo_base"
@@ -79,14 +78,28 @@
             style="@style/estilo_textview"
             android:text="@string/tAlim"
             />
-        <EditText
-            style="@style/estilo_edit"
-            android:id="@+id/edit_valeA"
-            android:inputType="numberDecimal"
-            />
-
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/rgedit_valeA"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+            <RadioButton
+                android:text="@string/btnVA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbVAs"
+                >
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnVA0"
+                android:id="@+id/rbVAn"
+                >
+            </RadioButton>
+        </RadioGroup>
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/ll_valeR"
         style="@style/estilo_base"
@@ -94,14 +107,29 @@
         <TextView
             android:id="@+id/view_valeR"
             style="@style/estilo_textview"
-            android:text="@string/tRefei"
-            />
-        <EditText
-            style="@style/estilo_edit"
-            android:id="@+id/edit_valeR"
-            android:inputType="numberDecimal"
-            />
+            android:text="@string/tRefei" />
+        <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+            android:id="@+id/rgedit_valeR"
+           >
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/btnVR1"
+               android:id="@+id/rbVRs"
+               ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnVR0"
+                android:id="@+id/rbVRn"
 
+                >
+
+            </RadioButton>
+       </RadioGroup>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/ll_valeT"
@@ -112,13 +140,204 @@
             style="@style/estilo_textview"
             android:text="@string/tTrans"
             />
-        <EditText
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/rgedit_valeT"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnVT1"
+                android:id="@+id/rbVTs"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnVT0"
+                android:id="@+id/rbVTn"
+                ></RadioButton>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/bt_enviar"
+            style="@style/enviar"
+
+            android:text="@string/Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_salBruto"
+            style="@style/estilo_textview"
+            android:text="@string/salarioBruto"
+            />
+        <TextView
             style="@style/estilo_edit"
-            android:id="@+id/edit_valeT"
-            android:inputType="numberDecimal"
+            android:id="@+id/vlr_salBruto"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_valorPlano"
+            style="@style/estilo_textview"
+            android:text="@string/vPlano"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_valorPlano"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_ValorVT"
+            style="@style/estilo_textview"
+            android:text="@string/vTrans"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_ValorVT"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_ValorVR"
+            style="@style/estilo_textview"
+            android:text="@string/vRefei"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_ValorVR"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_ValorVA"
+            style="@style/estilo_textview"
+            android:text="@string/vAlim"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_ValorVA"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_descINSS"
+            style="@style/estilo_textview"
+            android:text="@string/descINSS"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_descINSS"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_descIRRF"
+            style="@style/estilo_textview"
+            android:text="@string/descIRRF"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_descIRRF"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_totalDesc"
+            style="@style/estilo_textview"
+            android:text="@string/totalDesc"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_totalDesc"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_PorceDesc"
+            style="@style/estilo_textview"
+            android:text="@string/porceDesc"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_PorceDesc"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        style="@style/estilo_base"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewvalue_salLiquido"
+            style="@style/estilo_textview"
+            android:text="@string/salarioLiquido"
+            />
+        <TextView
+            style="@style/estilo_edit"
+            android:id="@+id/vlr_salLiquido"
+           android:text=""
             />
 
     </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <Button-->
+<!--            android:id="@+id/bt_refazer"-->
+<!--            style="@style/enviar"-->
+
+<!--            android:text="@string/Refazer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </Button>-->
+<!--    </LinearLayout>-->
 
 </LinearLayout>
 </ScrollView>
